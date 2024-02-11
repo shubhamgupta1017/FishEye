@@ -1,0 +1,37 @@
+{
+    "manifest_version": 2,
+    "name": "Phising Detector",
+    "version": "1.0",
+    "description": "Extracts data from visited websites",
+    "icons": {
+      "16": "logo16.png",
+      "48": "logo48.png",
+      "128": "logo128.png"
+    },
+    "permissions": [
+            "webNavigation",
+            "webRequest",
+            "webRequestBlocking",
+            "<all_urls>",
+            "*://*/*",
+            "activeTab"
+    ],
+  "browser_action": {
+    "default_icon": {
+      "16": "logo16.png",
+      "48": "logo48.png",
+      "128": "logo128.png"
+    },
+      "default_popup": "popup.html"
+    },
+    "background": {
+        "service_worker": "background.js"
+      },
+      "content_scripts": [
+        {
+          "matches": ["<all_urls>"],
+          "js": ["content.js"]
+        }
+    ]
+  }
+  

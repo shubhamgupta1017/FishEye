@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html >
+<head >
+  <title>Chrome Extension</title>
+  <script src="popup.js"></script>
+  <style>
+    /* Adjust width and height as needed */
+    body {
+      width: 200px;
+      height: 200px;
+      background-color: #75aaf6;
+      border:10px;
+
+    }
+    #sendButton {
+      width: 200px;
+      height: 200px;
+      background-image: url("yellow.png") ;
+      background-size: cover ;
+      background-position: center;
+      box-shadow: none;
+      border: none;
+      border-radius: 10px;
+      
+    }
+    #output {
+      color: rgb(255, 253, 253);
+      font-size: 28px;
+      text-align: center;
+      font-family: firasans;
+      margin-top: 1px;
+      margin-bottom: 20px;
+    }
+    </style>
+</head>
+<body >
+  
+  <div id="logo">
+  <button id="sendButton">
+  </button>
+  </div>
+  <h1 id="output">Check Site</h1>
+</body>
+</html>
